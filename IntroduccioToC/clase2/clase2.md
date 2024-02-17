@@ -16,7 +16,7 @@ utilizados por el lenguaje para un fin especifico.
 No pueden ser empleadas por el programador
 para nombrar variables, atributos, métodos o clases.
 
-*Palabras:*
+|*Palabras:*                                                                    |
 |:-----:|:---------:|:------:|:--------:|:------:|:--------:|:-------:|:-------:|
 |auto   | break     | case   | char     | const  | continue | default | do      |
 |double | else      | enum   | extern   | float  | for      | goto    | if      |
