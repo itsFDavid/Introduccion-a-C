@@ -6,7 +6,7 @@ int main(){
         printf("Todo este \ncodigo, se imprime dentro\ndel bloque if\n");
     }
 
-    int numero= 34;
+    int numero= 55;
     if(numero %2 == 0){
         printf("El numero es par\n");
     }
