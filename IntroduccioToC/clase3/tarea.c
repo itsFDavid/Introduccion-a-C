@@ -21,9 +21,9 @@ int main(){
     float resultA, resultB;
 
     resultA= 1.0/3.0+3.0/5.0+1.0/30.0/(23.0/30.0);
-    
-    resultB= (5.0+(2.0/(1.0/(1.0+(2.0/(2.0-(1.0/4.0)))))));
 
+    resultB= (5.0+(2.0/(1.0/(1.0+(2.0/(2.0-(1.0/4.0)))))));
+    resultA= 12.0 + 3.0 ;
 
     printf("%f\n", resultA);
     printf("%f\n", resultB);

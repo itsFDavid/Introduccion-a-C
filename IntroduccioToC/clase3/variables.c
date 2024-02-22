@@ -9,5 +9,4 @@ int main(){
     printf("%d\n ", una_variable);
     return 0;
 
-    
 }
