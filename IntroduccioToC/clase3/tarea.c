@@ -23,10 +23,9 @@ int main(){
     resultA= 1.0/3.0+3.0/5.0+1.0/30.0/(23.0/30.0);
 
     resultB= (5.0+(2.0/(1.0/(1.0+(2.0/(2.0-(1.0/4.0)))))));
-    resultA= 12.0 + 3.0 ;
 
-    printf("%f\n", resultA);
-    printf("%f\n", resultB);
+    printf("El resultado de la operacion 1 es: %f\n", resultA);
+    printf("El resultado de la operacion 2 es: %f\n", resultB);
     
     return 0;
 }
