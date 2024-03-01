@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-void numeroMultiplo(int numero, int numero2, int numero3, int rango, int lista[], 
-                    int lista2[], int *contador) {
+void numeroMultiplo(int numero, int numero2, int rango, int lista[], 
+                  int *contador) {
     int n = 1;
     *contador = 0; 
 
@@ -9,12 +9,6 @@ void numeroMultiplo(int numero, int numero2, int numero3, int rango, int lista[]
         if (n % numero == 0 && n% numero2) {
             lista[*contador] = n;
             (*contador)++;
-            if (n==numero3){
-                lista2[*contador]= n*n;
-                lista2[*contador+1]=n*n*n;
-                (*contador)++;
-            }
-            
         }
         n++;
     }
@@ -25,7 +19,7 @@ void numeroMultiplo(int numero, int numero2, int numero3, int rango, int lista[]
 int main(){
     int numero, numero2, numero3;
     int rango=0, contador=0;
-    int lista[1000], lista2[1000];
+    int lista[1000];
     printf("Ingresa un numero entero para obtener los multiplos: ");
     scanf("%d", &numero);
     printf("Ingresa un numero entero para omitir los multiplos de este: ");
@@ -43,12 +37,15 @@ int main(){
         puts("El rango no es aceptable\n");
         return 0;
     }
-    numeroMultiplo(numero, numero2, numero3, rango, lista, lista2, &contador);
+    numeroMultiplo(numero, numero2, rango, lista, &contador);
 
     printf("Los resultados son: \n");
 
     for (int i = 0; i < contador; i++) {
         printf("%d, ", lista[i]);
+        if(lista[i]==numero3){
+            printf("%d %d, ", lista[i]*lista[i], lista[i]*lista[i]*lista[i]);
+        }
     }
     
     
