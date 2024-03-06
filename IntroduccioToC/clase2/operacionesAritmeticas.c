@@ -1,8 +1,0 @@
-#include <stdio.h>
-
-int main(){
-    printf("La suma de %d + %d es igual a = %d\n", 5, 8, 5+8);
-
-    printf("La suma de %d + %d es igual a = %d\n", 78787, 3259, 78787+3259);
-    return 0;
-}
