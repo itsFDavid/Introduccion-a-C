@@ -1,0 +1,2 @@
+Archivo escrito: Texto ingresado desde fprintf()Archivo escrito: Texto ingresado desde fprintf()Archivo escrito: Texto ingresado desde fprintf()
+Archivo escrito: Texto ingresado desde fprintf()

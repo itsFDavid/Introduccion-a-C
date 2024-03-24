@@ -1,0 +1,1 @@
+Texto escrito desde la funcion 'fputc()', solo que no da salto de linea esto    ,
