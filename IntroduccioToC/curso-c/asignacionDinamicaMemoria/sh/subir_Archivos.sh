@@ -2,16 +2,27 @@
 
 # Lista de archivos a manejar
 archivos=(
-    "../copiaCadenaCalloc.c"
-    "../copiaCadenaMalloc.c"
-    "../estructuraMalloc.c"
-    "../listaEnladaMalloc.c"
-    "../matrizDinamicaMalloc.c"
-    "../output/copiaCadenaCalloc"
-    "../output/copiaCadenaMalloc"
-    "../output/estructuraMalloc"
-    "../output/listaEnlazadaMalloc"
-    "../output/matrizDinamicaMalloc"
+        "../gestionAlumnos.c"
+	"../gestionClientes.c"
+	"../gestionEmpleados.c"
+	"../gestionLibros.c"
+	"../gestionProductos.c"
+	"../output/gestionAlumnos"
+	"../output/gestionClientes"
+	"../output/gestionEmpleados"
+	"../output/gestionLibros"
+	"../output/gestionProductos"
+	"../output/registroEstudiante"
+	"../registroEstudiantes.c"
+
+
+
+
+
+
+
+
+
 )
 
 # Iterar sobre la lista de archivos
