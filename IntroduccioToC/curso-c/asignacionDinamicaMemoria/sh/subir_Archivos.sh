@@ -2,7 +2,7 @@
 
 # Lista de archivos a manejar
 archivos=(
-        "../gestionAlumnos.c"
+    "../gestionAlumnos.c"
 	"../gestionClientes.c"
 	"../gestionEmpleados.c"
 	"../gestionLibros.c"
@@ -14,15 +14,6 @@ archivos=(
 	"../output/gestionProductos"
 	"../output/registroEstudiante"
 	"../registroEstudiantes.c"
-
-
-
-
-
-
-
-
-
 )
 
 # Iterar sobre la lista de archivos
