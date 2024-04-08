@@ -1,0 +1,11 @@
+---------------------------------
+| Calificacion |    Descripcion   |
+---------------------------------
+|     10.00     |   Calificacion 1  |
+|     9.00     |   Calificacion 2  |
+|     8.00     |   Calificacion 3  |
+|     9.00     |   Calificacion 4  |
+|     10.00     |   Calificacion 5  |
+---------------------------------
+|    Promedio  |       9.20       |
+---------------------------------
