@@ -20,6 +20,7 @@ int main(){
     puts("\nA\tA+2\tA+4\tA+6");
     int i;
 
+
     for(i=1;i<=4; i++){
         printf("%d", a);
         printf("\t%d", a+2);
