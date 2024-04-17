@@ -13,9 +13,9 @@ int main(){
     printf("\n");
 
     for(int i=1; i<=n; i++){
-        printf("%d\t", i);
+        printf("%d|\t", i);
         for(int j=1; j<=m; j++){
-            printf("%d\t", i*j);
+            printf("|%d|\t", i*j);
         }
         printf("\n");
     }
@@ -23,3 +23,7 @@ int main(){
 
     return 0;
 }
+
+
+//Inv las 5 realidades importantes de la arquitectura de computadoras 
+// 1.- numeros enteros no son enteros, los de punto float no son reales
