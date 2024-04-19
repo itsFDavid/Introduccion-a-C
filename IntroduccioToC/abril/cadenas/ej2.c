@@ -10,7 +10,6 @@ int main(){
     puts("Introduce la palabra 2: ");
     scanf("%s", pa2);
     printf("\n\tAntes\n");
-
     printf("Palabra 1: %s", pa1);
     printf("     Palabra 2: %s\n", pa2);
     strcpy(tmp, pa1);
@@ -18,7 +17,7 @@ int main(){
     stpcpy(pa2, tmp);
     printf("\n\tDespues\n");
     printf("Palabra 1: %s", pa1);
-    printf("     Palabra 2: %s\n", pa2);
+    printf("     Palabra 2: %s\n\n", pa2);
 
     return 0;
 }
