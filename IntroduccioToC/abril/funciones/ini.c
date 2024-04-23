@@ -3,6 +3,7 @@
 
 float promedio(float a, float b);
 
+
 int main(){
     float prom, a=5, b=10;
     prom= promedio(a, b);

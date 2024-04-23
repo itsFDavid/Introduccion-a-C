@@ -20,6 +20,7 @@ float maximo(float n1, float n2){
     }
 }
 
+
 void inverso(){
     char palabra[50];
     int len=0;
