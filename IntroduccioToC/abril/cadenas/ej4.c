@@ -11,8 +11,8 @@ int main(){
     res = strcmp(pal1, pal2);
     printf("%d\n", res);
     if(res==0)puts("Ambas palabras son iguales");
-    if(res>0)printf("La palabra ´%s´ es mas grande que ´%s´\n", pal2, pal1);
-    if(res<0)printf("La palabra ´%s´ es mas grande que ´%s´\n", pal1, pal2);
+    if(res<0)printf("La palabra ´%s´ es mas grande que ´%s´\n", pal2, pal1);
+    if(res>0)printf("La palabra ´%s´ es mas grande que ´%s´\n", pal1, pal2);
 
     return 0;
 }
