@@ -21,7 +21,7 @@ int main(){
 
     printf("Deseas cambiar el tamaño de la cadena? (1: Si, 0: No)\n");
     scanf("%d", &i);
-    if(i){
+    if(i==1){
         printf("Teclea la longitud de la cadena\n");
         scanf("%d", &i);
         buffer= (char *) realloc(buffer, (i+1)*sizeof(char));
