@@ -1,8 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main() {
     int n;
+    clock_t inicio, fin;
+    double cpu_tiempo_usado;
+    inicio = clock();
     printf("Ingrese el tamaño del arreglo: ");
     scanf("%d", &n);
 
@@ -25,6 +29,10 @@ int main() {
     }
     printf("\n");
 
+    fin = clock();
+
     free(arr);
+    cpu_tiempo_usado = ((double)(fin - inicio)) / CLOCKS_PER_SEC;
+    printf("Tiempo de ejecucion: %f milisegundos\n", cpu_tiempo_usado);
     return 0;
 }
