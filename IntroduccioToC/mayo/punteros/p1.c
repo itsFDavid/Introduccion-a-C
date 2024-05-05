@@ -22,7 +22,7 @@ int main(){
             scanf("%d", &arr[i*m+j]);
         }
     }
-    puts("Los elementos de la matriz son: ");
+    puts("Matriz: ");
     for (i = 0; i < n; i++) {
         for (j = 0; j < m; j++) {
             printf("%d ", arr[i*m+j]);
