@@ -7,8 +7,8 @@ int main(){
     double cpu_tiempo_usado;
     inicio = clock();
     int n;
-    //printf("Ingrese el tamaño del arreglo: ");
-    //scanf("%d", &n);
+    printf("Ingrese el tamaño del arreglo: ");
+    scanf("%d", &n);
     n=40;
 
     int arr[n];
