@@ -11,7 +11,7 @@ int main() {
     scanf("%d", &n);
 
 
-    int *arr = (int *)malloc(n * sizeof(int));
+    int *arr = (int *)malloc((n+1) * sizeof(int));
     if (arr == NULL) {
         printf("Error al asignar memoria.");
         return 1;
