@@ -8,7 +8,7 @@ void calcularEdad(int anioNacimiento, int mesNacimiento, int diaNacimiento, int 
 
     tiempo_actual = time(NULL);
     tiempo = localtime(&tiempo_actual);
-    printf("Tiempo: %d\n", *tiempo);
+    printf("Tiempo: %d\n\n", *tiempo);
 
 
     int anio_actual = tiempo->tm_year + 1900;
@@ -27,8 +27,11 @@ void calcularEdad(int anioNacimiento, int mesNacimiento, int diaNacimiento, int 
     *edad_anios = diferencia_anios;
     *edad_meses = diferencia_meses;
     *edad_dias = diferencia_dias;
-    printf("Fecha de nacimiento: %d/%d/%d\n", diaNacimiento, mesNacimiento, anioNacimiento);
-    printf("Fecha actual: %d/%d/%d\n", dia_actual, mes_actual, anio_actual);
+
+    puts("Datos de nacimiento");
+    printf("\tFecha de nacimiento: %d/%d/%d\n", diaNacimiento, mesNacimiento, anioNacimiento);
+    puts("Datos actuales");
+    printf("\tFecha actual: %d/%d/%d\n", dia_actual, mes_actual, anio_actual);
 }
 
 int main() {
@@ -46,7 +49,10 @@ int main() {
     scanf("%d", &diaNacimiento);
 
     calcularEdad(anioNacimiento, mesNacimiento, diaNacimiento, &edad_anios, &edad_meses, &edad_dias);
-
+    puts("");
+    puts("Calculando edad...");
+    puts("");
+    puts("Listo!");
     printf("Has vivido %d años, %d meses, %d días\n", edad_anios, edad_meses, edad_dias);
     fin = clock();
     printf("Tiempo de ejecución: %f\n", (double)(fin - inicio) / CLOCKS_PER_SEC);
