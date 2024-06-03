@@ -35,6 +35,8 @@ for i in range(num_puntos):
 x = np.array(x)
 y = np.array(y)
 
+print(f'x = {x} \t y = {y}')
+
 # Puntos para evaluar el polinomio
 x_nueva = np.linspace(min(x), max(x), 50)
 y_nueva = np.array([lagrange_interpolation(x, y, xi) for xi in x_nueva])
