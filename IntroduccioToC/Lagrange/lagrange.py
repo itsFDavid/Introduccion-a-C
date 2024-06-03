@@ -34,8 +34,12 @@ for i in range(num_puntos):
 
 x = np.array(x)
 y = np.array(y)
+print("Puntos conocidos:")
+for i in range(num_puntos):
+    print(f'x[{i}] = {x[i]} \t y[{i}] = {y[i]}')
+print('\n\n')
 
-print(f'x = {x} \t y = {y}')
+
 
 # Puntos para evaluar el polinomio
 x_nueva = np.linspace(min(x), max(x), 50)
