@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def lagrange_interpolation(x, y, xi):
+def lagrange_Interpolacion(x, y, xi):
     """
     Interpolación de Lagrange
     :param x: puntos x conocidos
@@ -34,22 +34,29 @@ for i in range(num_puntos):
 
 x = np.array(x)
 y = np.array(y)
-print("Puntos conocidos:")
+print("\n\nPuntos conocidos:")
 for i in range(num_puntos):
     print(f'x[{i}] = {x[i]} \t y[{i}] = {y[i]}')
 print('\n\n')
 
 
-
-# Puntos para evaluar el polinomio
+print('\n\nPuntos interpolados:\n')
 x_nueva = np.linspace(min(x), max(x), 50)
-y_nueva = np.array([lagrange_interpolation(x, y, xi) for xi in x_nueva])
+y_nueva = np.array([lagrange_Interpolacion(x, y, xi) for xi in x_nueva])
 for i in range(x_nueva.size):
     print(f'x[{i}] = {x_nueva[i]} \t y[{i}] = {y_nueva[i]}')
+
+print('\n\nOtra intepolacion:\n')
+
+x_otra= np.linspace(min(x), max(x), 20)
+y_otra= np.array([lagrange_Interpolacion(x, y, xi) for xi in x_otra])
+for i in range(x_otra.size):
+    print(f'x[{i}] = {x_otra[i]} \t y[{i}] = {y_otra[i]}')
 
 # Visualización de los resultados
 plt.figure(figsize=(10, 6))
 plt.plot(x, y, '-', label='Puntos conocidos')
+plt.plot(x_otra, y_otra, '*', label='Puntos interpolados de otra')
 plt.plot(x_nueva, y_nueva, '-', label='Polinomio de Lagrange')
 plt.xlabel('x')
 plt.ylabel('y')
