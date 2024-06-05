@@ -61,10 +61,4 @@ plt.grid(True)
 
 plt.show()
 
-# Calcular el porcentaje de acierto
-y_interpolada = np.array([lagrange_interpolation(x, y, xi) for xi in x])
-error = np.abs(y - y_interpolada)
-print(f'Error en la interpolación: {error}')
-precision = 100 - (np.mean(error / y) * 100)
 
-print(f'Porcentaje de acierto: {precision:.2f}%')
