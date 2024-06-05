@@ -34,10 +34,15 @@ for i in range(num_puntos):
 
 x = np.array(x)
 y = np.array(y)
+
+
 print("\n\nPuntos conocidos:")
 for i in range(num_puntos):
     print(f'x[{i}] = {x[i]} \t y[{i}] = {y[i]}')
 print('\n\n')
+
+
+
 
 
 print('\n\nPuntos interpolados:\n')
@@ -53,7 +58,8 @@ y_otra= np.array([lagrange_Interpolacion(x, y, xi) for xi in x_otra])
 for i in range(x_otra.size):
     print(f'x[{i}] = {x_otra[i]} \t y[{i}] = {y_otra[i]}')
 
-# Visualización de los resultados
+
+
 plt.figure(figsize=(10, 6))
 plt.plot(x, y, '-', label='Puntos conocidos')
 plt.plot(x_otra, y_otra, '*', label='Puntos interpolados de otra')
